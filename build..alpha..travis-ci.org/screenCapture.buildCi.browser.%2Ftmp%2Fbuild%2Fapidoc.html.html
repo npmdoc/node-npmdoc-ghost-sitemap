@@ -1,0 +1,888 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>ghost-sitemap (v0.0.3)</a>
+</h1>
+<h4>Frustation free sitemap generator for ghost</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ghost-sitemap">module ghost-sitemap</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.ghost">
+            function <span class="apidocSignatureSpan">ghost-sitemap.</span>ghost
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.ping">
+            function <span class="apidocSignatureSpan">ghost-sitemap.</span>ping
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.sitemap">
+            function <span class="apidocSignatureSpan">ghost-sitemap.</span>sitemap
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ghost-sitemap.</span>ghost.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ghost-sitemap.</span>ping.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ghost-sitemap.</span>sitemap.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ghost-sitemap.ghost">module ghost-sitemap.ghost</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.ghost.ghost">
+            function <span class="apidocSignatureSpan">ghost-sitemap.</span>ghost
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ghost-sitemap.ghost.prototype">module ghost-sitemap.ghost.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.ghost.prototype.ghostToMine">
+            function <span class="apidocSignatureSpan">ghost-sitemap.ghost.prototype.</span>ghostToMine
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ghost-sitemap.ping">module ghost-sitemap.ping</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.ping.ping">
+            function <span class="apidocSignatureSpan">ghost-sitemap.</span>ping
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ghost-sitemap.ping.prototype">module ghost-sitemap.ping.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.ping.prototype.pingServer">
+            function <span class="apidocSignatureSpan">ghost-sitemap.ping.prototype.</span>pingServer
+            <span class="apidocSignatureSpan">(service)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ghost-sitemap.sitemap">module ghost-sitemap.sitemap</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.sitemap.sitemap">
+            function <span class="apidocSignatureSpan">ghost-sitemap.</span>sitemap
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ghost-sitemap.sitemap.prototype">module ghost-sitemap.sitemap.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.sitemap.prototype.finalSiteMap">
+            function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>finalSiteMap
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.sitemap.prototype.getPages">
+            function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>getPages
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.sitemap.prototype.getPermalink">
+            function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>getPermalink
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.sitemap.prototype.getPosts">
+            function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>getPosts
+            <span class="apidocSignatureSpan">(permalink)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.sitemap.prototype.getTags">
+            function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>getTags
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.sitemap.prototype.objectToXML">
+            function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>objectToXML
+            <span class="apidocSignatureSpan">(object, type, prefix)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ghost-sitemap.sitemap.prototype.xmlToFile">
+            function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>xmlToFile
+            <span class="apidocSignatureSpan">(xml, name)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ghost-sitemap" id="apidoc.module.ghost-sitemap">module ghost-sitemap</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.ghost" id="apidoc.element.ghost-sitemap.ghost">
+        function <span class="apidocSignatureSpan">ghost-sitemap.</span>ghost
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function GhostConfig(obj) {
+  var e;
+  this.obj = obj;
+  this.path = path.join(process.cwd(), this.obj.ghost_config_path);
+  this.env = this.obj.env;
+  try {
+    this.ghostConfig = require(this.path);
+  } catch (_error) {
+    e = _error;
+    console.log(colors.red(messages.ghost_config_not_found.replace('%path%', this.path)));
+    process.exit(1);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.ping" id="apidoc.element.ghost-sitemap.ping">
+        function <span class="apidocSignatureSpan">ghost-sitemap.</span>ping
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Ping(config) {
+  this.config = config;
+  this.baseUrl = this.config.url;
+  return;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.sitemap" id="apidoc.element.ghost-sitemap.sitemap">
+        function <span class="apidocSignatureSpan">ghost-sitemap.</span>sitemap
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function SiteMap(config) {
+  var connection;
+  this.config = config;
+  connection = this.config.database;
+  this.baseUrl = this.config.url;
+  knex = knex(connection);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ghost-sitemap.ghost" id="apidoc.module.ghost-sitemap.ghost">module ghost-sitemap.ghost</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.ghost.ghost" id="apidoc.element.ghost-sitemap.ghost.ghost">
+        function <span class="apidocSignatureSpan">ghost-sitemap.</span>ghost
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function GhostConfig(obj) {
+  var e;
+  this.obj = obj;
+  this.path = path.join(process.cwd(), this.obj.ghost_config_path);
+  this.env = this.obj.env;
+  try {
+    this.ghostConfig = require(this.path);
+  } catch (_error) {
+    e = _error;
+    console.log(colors.red(messages.ghost_config_not_found.replace('%path%', this.path)));
+    process.exit(1);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ghost-sitemap.ghost.prototype" id="apidoc.module.ghost-sitemap.ghost.prototype">module ghost-sitemap.ghost.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.ghost.prototype.ghostToMine" id="apidoc.element.ghost-sitemap.ghost.prototype.ghostToMine">
+        function <span class="apidocSignatureSpan">ghost-sitemap.ghost.prototype.</span>ghostToMine
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ghostToMine = function () {
+  var defer;
+  defer = q.defer();
+  defer.resolve(_.assign(this.ghostConfig[this.env], this.obj));
+  return defer.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      }
+    });
+  }
+});
+};
+
+generate = function(initGhostConfig) {
+initGhostConfig.<span class="apidocCodeKeywordSpan">ghostToMine</span>().then(function(configration) {
+  console.log(colors.cyan(messages.init));
+  initSiteMap = new SiteMap(configration);
+  console.log(colors.cyan(_.template(messages.fetching, {
+    type: 'posts'
+  })));
+  return initSiteMap.getPermalink();
+}).then(function(permalink) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ghost-sitemap.ping" id="apidoc.module.ghost-sitemap.ping">module ghost-sitemap.ping</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.ping.ping" id="apidoc.element.ghost-sitemap.ping.ping">
+        function <span class="apidocSignatureSpan">ghost-sitemap.</span>ping
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Ping(config) {
+  this.config = config;
+  this.baseUrl = this.config.url;
+  return;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ghost-sitemap.ping.prototype" id="apidoc.module.ghost-sitemap.ping.prototype">module ghost-sitemap.ping.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.ping.prototype.pingServer" id="apidoc.element.ghost-sitemap.ping.prototype.pingServer">
+        function <span class="apidocSignatureSpan">ghost-sitemap.ping.prototype.</span>pingServer
+        <span class="apidocSignatureSpan">(service)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pingServer = function (service) {
+  var defer, innerPath, makeRequest, prefix, serviceUrl;
+  defer = q.defer();
+  if (service === 'google') {
+    serviceUrl = "http://www.google.com/webmasters/sitemaps/ping?sitemap=";
+  } else if (service === 'bing') {
+    serviceUrl = "http://www.bing.com/webmaster/ping.aspx?siteMap=";
+  }
+  prefix = "" + this.baseUrl + "/" + this.config.output_dir;
+  makeRequest = function(file, callback) {
+    var postfix, url;
+    postfix = "" + prefix + "/" + file;
+    url = "" + serviceUrl + postfix;
+    request(url, function(err, response, body) {
+      return callback(null, {
+        status: response.statusCode,
+        file: postfix
+      });
+    });
+  };
+  innerPath = path.join(process.cwd(), this.config.output_dir + "/");
+  fs.readdir(innerPath, function(err, files) {
+    if (files) {
+      async.map(files, makeRequest, function(error, results) {
+        if (error) {
+          return defer.reject(error);
+        } else {
+          return defer.resolve(results);
+        }
+      });
+    } else {
+      return defer.reject(err);
+    }
+  });
+  return defer.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ping = function(initGhostConfig, service) {
+return initGhostConfig.ghostToMine().then(function(configration) {
+  var initPings;
+  console.log(colors.cyan(_.template(messages.pinging, {
+    service: service
+  })));
+  initPings = new Ping(configration);
+  return initPings.<span class="apidocCodeKeywordSpan">pingServer</span>(service);
+}).then(function(success) {
+  return _.map(success, function(val) {
+    if (val.status === 200) {
+      return console.log(colors.green(logSymbols.success, _.template(messages.ping_success, {
+        file: val.file,
+        service: service
+      })));
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ghost-sitemap.sitemap" id="apidoc.module.ghost-sitemap.sitemap">module ghost-sitemap.sitemap</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.sitemap.sitemap" id="apidoc.element.ghost-sitemap.sitemap.sitemap">
+        function <span class="apidocSignatureSpan">ghost-sitemap.</span>sitemap
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function SiteMap(config) {
+  var connection;
+  this.config = config;
+  connection = this.config.database;
+  this.baseUrl = this.config.url;
+  knex = knex(connection);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ghost-sitemap.sitemap.prototype" id="apidoc.module.ghost-sitemap.sitemap.prototype">module ghost-sitemap.sitemap.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.sitemap.prototype.finalSiteMap" id="apidoc.element.ghost-sitemap.sitemap.prototype.finalSiteMap">
+        function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>finalSiteMap
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">finalSiteMap = function () {
+  var baseUrl, defer, dir, innerPath;
+  defer = q.defer();
+  innerPath = path.join(process.cwd(), this.config.output_dir + "/");
+  dir = this.config.output_dir;
+  baseUrl = this.baseUrl;
+  fs.readdir(innerPath, function(err, files) {
+    var file, sitemap, urls, _i, _len;
+    if (files) {
+      urls = [];
+      for (_i = 0, _len = files.length; _i &lt; _len; _i++) {
+        file = files[_i];
+        if (file !== 'sitemap.xml') {
+          urls.push({
+            url: "/" + dir + "/" + file,
+            changefreq: 'monthly',
+            priority: '0.7'
+          });
+        }
+      }
+      sitemap = sm.createSitemap({
+        hostname: baseUrl,
+        cacheTime: 600000,
+        urls: urls
+      });
+      return sitemap.toXML(function(xml) {
+        return defer.resolve(xml);
+      });
+    } else {
+      return defer.reject(err);
+    }
+  });
+  return defer.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      type: 'pages',
+      file: 'gpages.xml'
+    })));
+  }
+  return initSiteMap.xmlToFile(pagesXml, 'gpages.xml');
+}).then(function() {
+  console.log(colors.cyan(messages.building));
+  return initSiteMap.<span class="apidocCodeKeywordSpan">finalSiteMap</span>();
+}).then(function(xml) {
+  return initSiteMap.xmlToFile(xml, 'sitemap.xml');
+}).then(function() {
+  return console.log(colors.green(logSymbols.success, messages.alldone));
+})["catch"](function(error) {
+  console.log(colors.red(logSymbols.error, error));
+  return process.exit(1);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.sitemap.prototype.getPages" id="apidoc.element.ghost-sitemap.sitemap.prototype.getPages">
+        function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>getPages
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPages = function () {
+  var defer, error;
+  defer = q.defer();
+  error = {
+    error: 'No pages found'
+  };
+  knex.select('slug', 'published_at').from('posts').where(function() {
+    this.where('status', 'published').where('page', 1);
+  }).then(function(posts) {
+    if (posts) {
+      defer.resolve(posts);
+    } else {
+      defer.reject(error);
+    }
+  })["catch"](function(err) {
+    defer.reject(error);
+  });
+  return defer.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}).then(function() {
+  console.log(colors.green(logSymbols.success, _.template(messages.written, {
+    file: 'gtags.xml'
+  })));
+  console.log(colors.cyan(_.template(messages.fetching, {
+    type: 'pages'
+  })));
+  return initSiteMap.<span class="apidocCodeKeywordSpan">getPages</span>();
+}).then(function(pages) {
+  var counts;
+  counts = _.size(pages);
+  if (counts &gt; 0) {
+    console.log(colors.green(logSymbols.success, _.template(messages.fetched, {
+      counts: counts,
+      type: pluralize('page', counts)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.sitemap.prototype.getPermalink" id="apidoc.element.ghost-sitemap.sitemap.prototype.getPermalink">
+        function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>getPermalink
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPermalink = function () {
+  var defer;
+  defer = q.defer();
+  knex.select('value').from('settings').where(function() {
+    this.where('key', 'permalinks');
+  }).then(function(permalink) {
+    defer.resolve(permalink);
+  })["catch"](function(err) {
+    defer.reject(err);
+  });
+  return defer.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+generate = function(initGhostConfig) {
+initGhostConfig.ghostToMine().then(function(configration) {
+  console.log(colors.cyan(messages.init));
+  initSiteMap = new SiteMap(configration);
+  console.log(colors.cyan(_.template(messages.fetching, {
+    type: 'posts'
+  })));
+  return initSiteMap.<span class="apidocCodeKeywordSpan">getPermalink</span>();
+}).then(function(permalink) {
+  return initSiteMap.getPosts(permalink);
+}).then(function(posts) {
+  var counts;
+  counts = _.size(posts);
+  if (counts &gt; 0) {
+    console.log(colors.green(logSymbols.success, _.template(messages.fetched, {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.sitemap.prototype.getPosts" id="apidoc.element.ghost-sitemap.sitemap.prototype.getPosts">
+        function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>getPosts
+        <span class="apidocSignatureSpan">(permalink)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPosts = function (permalink) {
+  var defer, error;
+  defer = q.defer();
+  error = {
+    error: 'No posts found'
+  };
+  knex.select('slug', 'published_at').from('posts').where(function() {
+    this.where('status', 'published').where('page', 0);
+  }).then(function(posts) {
+    var filtered_posts;
+    filtered_posts = _.map(posts, function(item) {
+      var date, day, mapObj, month, re, slug_to_return, year;
+      date = new Date(item.published_at);
+      year = date.getFullYear();
+      month = date.getMonth();
+      day = date.getDay();
+      mapObj = {
+        '/:year': year,
+        '/:month': month,
+        '/:day': day,
+        '/:slug/': item.slug
+      };
+      re = new RegExp(Object.keys(mapObj).join("|"), "gi");
+      slug_to_return = permalink[0].value.replace(re, function(matched) {
+        return "" + mapObj[matched.toLowerCase()] + "/";
+      });
+      if (slug_to_return.substr(-1) === '/') {
+        item.slug = slug_to_return.substr(0, slug_to_return.length - 1);
+      } else {
+        item.slug = slug_to_return;
+      }
+    });
+    if (posts) {
+      defer.resolve(posts);
+    } else {
+      defer.reject(error);
+    }
+  })["catch"](function(err) {
+    defer.reject(error);
+  });
+  return defer.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  console.log(colors.cyan(messages.init));
+  initSiteMap = new SiteMap(configration);
+  console.log(colors.cyan(_.template(messages.fetching, {
+    type: 'posts'
+  })));
+  return initSiteMap.getPermalink();
+}).then(function(permalink) {
+  return initSiteMap.<span class="apidocCodeKeywordSpan">getPosts</span>(permalink);
+}).then(function(posts) {
+  var counts;
+  counts = _.size(posts);
+  if (counts &gt; 0) {
+    console.log(colors.green(logSymbols.success, _.template(messages.fetched, {
+      counts: counts,
+      type: pluralize('post', counts)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.sitemap.prototype.getTags" id="apidoc.element.ghost-sitemap.sitemap.prototype.getTags">
+        function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>getTags
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTags = function () {
+  var defer, error;
+  defer = q.defer();
+  error = {
+    error: 'No tags found'
+  };
+  knex.select('tags.slug').from('tags').innerJoin('posts_tags', function() {
+    this.on('tags.id', '=', 'posts_tags.tag_id');
+  }).then(function(tags) {
+    if (tags) {
+      defer.resolve(tags);
+    } else {
+      defer.reject(error);
+    }
+  })["catch"](function(err) {
+    defer.resolve(error);
+  });
+  return defer.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}).then(function() {
+  console.log(colors.green(logSymbols.success, _.template(messages.written, {
+    file: 'gposts.xml'
+  })));
+  console.log(colors.cyan(_.template(messages.fetching, {
+    type: 'tags'
+  })));
+  return initSiteMap.<span class="apidocCodeKeywordSpan">getTags</span>();
+}).then(function(tags) {
+  var counts;
+  counts = _.size(tags);
+  if (counts &gt; 0) {
+    console.log(colors.green(logSymbols.success, _.template(messages.fetched, {
+      counts: counts,
+      type: pluralize('tag', counts)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.sitemap.prototype.objectToXML" id="apidoc.element.ghost-sitemap.sitemap.prototype.objectToXML">
+        function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>objectToXML
+        <span class="apidocSignatureSpan">(object, type, prefix)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">objectToXML = function (object, type, prefix) {
+  var baseUrl, defer, key, params, sitemap, urls, value;
+  urls = [];
+  defer = q.defer();
+  params = this.config[type];
+  if (_.size(object) &gt; 0) {
+    if (prefix) {
+      baseUrl = "" + this.baseUrl + "/" + prefix + "/";
+    } else {
+      baseUrl = "" + this.baseUrl + "/";
+    }
+    for (key in object) {
+      value = object[key];
+      urls.push({
+        url: value.slug,
+        changefreq: params.frequency,
+        priority: params.priority
+      });
+    }
+    sitemap = sm.createSitemap({
+      hostname: baseUrl,
+      cacheTime: 600000,
+      urls: urls
+    });
+    sitemap.toXML(function(xml) {
+      return defer.resolve(xml);
+    });
+  } else {
+    defer.resolve("bypass");
+  }
+  return defer.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      type: pluralize('post', counts)
+    })));
+  } else {
+    console.log(colors.blue(logSymbols.info, _.template(messages.not_found, {
+      type: 'posts'
+    })));
+  }
+  return initSiteMap.<span class="apidocCodeKeywordSpan">objectToXML</span>(posts, 'posts');
+}).then(function(postsXml) {
+  if (postsXml !== "bypass") {
+    console.log(colors.cyan(_.template(messages.writing, {
+      type: 'posts',
+      file: 'gposts.xml'
+    })));
+  }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ghost-sitemap.sitemap.prototype.xmlToFile" id="apidoc.element.ghost-sitemap.sitemap.prototype.xmlToFile">
+        function <span class="apidocSignatureSpan">ghost-sitemap.sitemap.prototype.</span>xmlToFile
+        <span class="apidocSignatureSpan">(xml, name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">xmlToFile = function (xml, name) {
+  var defer, innerPath;
+  defer = q.defer();
+  innerPath = path.join(process.cwd(), "" + this.config.output_dir + "/" + name);
+  if (xml !== "bypass") {
+    fs.writeFile(innerPath, xml, function(err) {
+      if (err) {
+        defer.reject(err);
+      } else {
+        defer.resolve("created file " + path);
+      }
+    });
+  } else {
+    fs.exists(innerPath, function(exists) {
+      if (exists) {
+        return fs.unlink(innerPath, function(err) {
+          if (err) {
+            defer.reject(err);
+          } else {
+            defer.resolve("created file " + path);
+          }
+        });
+      } else {
+        defer.resolve("bypass");
+      }
+    });
+  }
+  return defer.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}).then(function(postsXml) {
+  if (postsXml !== "bypass") {
+    console.log(colors.cyan(_.template(messages.writing, {
+      type: 'posts',
+      file: 'gposts.xml'
+    })));
+  }
+  return initSiteMap.<span class="apidocCodeKeywordSpan">xmlToFile</span>(postsXml, 'gposts.xml');
+}).then(function() {
+  console.log(colors.green(logSymbols.success, _.template(messages.written, {
+    file: 'gposts.xml'
+  })));
+  console.log(colors.cyan(_.template(messages.fetching, {
+    type: 'tags'
+  })));
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
